@@ -6,13 +6,15 @@ to post short snippets. The brief for the features is deliberately vague so
 that we can see how you interpret the requirements and solve problems
 accordingly.
 
+As you work, please keep a log of the time you spend on various features.
+
 ## Core Features
 
 At a minimum the following features should be implemented:
 
-* Users can sign up and create one or more blogs.
+* Users can sign up and create and manage one or more blogs.
 * Users can create posts on the blogs.
-* Posts can just be text.
+* Posts can be text-only.
 
 ## Extra Features
 
