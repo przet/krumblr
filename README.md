@@ -19,7 +19,9 @@ At a minimum the following features should be implemented:
 These are additional features which do not have to be implemented (although
 we'd like to see at least a couple of them). Feel free to pick and choose from
 the following the things you'd like to demonstrate or that might pose an
-interesting challenge:
+interesting challenge. You're not limited to what's in this list here, so if
+there's an interesting feature you'd like to try out, please do. These are just
+a few ideas to implement:
 
 * Comments on posts
 * Tags/categories on posts
@@ -38,6 +40,9 @@ important, so a couple of features implemented well goes a long way.
 * You're welcome to include a CSS framework (or style it from scratch) to
   you're liking, but again, it's about the approach to problem solving. UI
   is part of that, but it doesn't have to be the main focus.
+* You can switch to MySQL/MariaDB or PostgreSQL, but stick with ActiveRecord.
+* This project is set up to use RSpec, but you're welcome to use MiniTest or
+  another test framework if you prefer.
 * Testing is important, so make sure you have appropriate coverage with specs.
 * Readable code is good; comments are appreciated where things aren't
   immediately obvious.
@@ -46,8 +51,10 @@ important, so a couple of features implemented well goes a long way.
 
 * Fork this repo.
 * Code your app.
-* Commit your changes (frequent commits are good).
-* Submit a pull request so we can see what you've done.
+* Commit your changes (frequent commits are good; separate branches for
+  different features are also good).
+* Send us a link and/or submit a pull request so we can see what you've done.
 
 If you'd like to show us a working app, you could deploy to something like
 Heroku, or even include CI using Travis, but don't feel obliged. As long as we
+can get it up and running on localhost, that's fine.
