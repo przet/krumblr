@@ -41,9 +41,9 @@ important, so a couple of features implemented well goes a long way.
   you're liking, but again, it's about the approach to problem solving. UI
   is part of that, but it doesn't have to be the main focus.
 * You can switch to PostgreSQL or MySQL/MariaDB, but stick with ActiveRecord.
+* Testing is important, so make sure you have appropriate coverage with specs.
 * This project is set up to use RSpec, but you're welcome to use MiniTest or
   another test framework if you prefer.
-* Testing is important, so make sure you have appropriate coverage with specs.
 * Readable code is good; comments are appreciated where things aren't
   immediately obvious.
 
