@@ -32,8 +32,9 @@ a few ideas to implement:
 * Different post types (images, code snippets, embedded video, etc.)
 * Searching the contents of a blog
 
-You can implement as many or as few of these as you'd like. Code quality is
-important, so a couple of features implemented well goes a long way.
+You can implement as many or as few of these as you'd like. **More features/
+more work is not necessarily better**. Code quality is important, so a couple
+of features implemented well goes a long way.
 
 ## Notes
 
