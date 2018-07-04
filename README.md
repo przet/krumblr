@@ -49,8 +49,8 @@ of features implemented well goes a long way.
   another test framework if you prefer.
 * Readable code is good; comments are appreciated where things aren't
   immediately obvious.
-* You can change the `.ruby-version` if required; minimum recommended is
-  `2.4.x`.
+* You can change the `.ruby-version` if required; the minimum required version
+  is `2.4.1` for Rails 5.2.
 
 ## Setup
 
