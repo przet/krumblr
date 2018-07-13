@@ -5,7 +5,7 @@ class CreatepostController < ApplicationController
 
   def submit
     @post = Post.new
-    if @post.save(post_params)
+    if @post.save
       flash[:notice] = "Post submitted"
       redirect_to post_path(@post)
     else
