@@ -1,5 +1,9 @@
 <%= simple_form_for Post.new do |f| %>
 <div class="form-group">
   <%=f.input :title, class: "form-control" %>
+  <br>
+  <%= f.input :body, input_html:
+   { title: 'Start writing!', placeholder:
+      '250 words max!' } %>
 </div>
 <% end %>
