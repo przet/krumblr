@@ -1,0 +1,2 @@
+module CreatepostHelper
+end
