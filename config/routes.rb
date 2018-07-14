@@ -1,9 +1,4 @@
 Rails.application.routes.draw do
-  get 'createpost/write'
-  get 'createpost/write_form'
-  get 'createpost/_form'
-  get 'createpost/new'
-  get 'createpost/show'
   get 'posts/show'
   get 'posts/index'
   devise_for :users
