@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'createpost/write'
   get 'createpost/write_form'
+  get 'createpost/_form'
   devise_for :users
   resources :posts
   root 'home#index'
