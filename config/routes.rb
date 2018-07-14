@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'createpost/new'
   get 'createpost/show'
   get 'posts/show'
+  get 'posts/index'
   devise_for :users
   resources :posts
   root 'home#index'
