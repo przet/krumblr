@@ -1,0 +1,7 @@
+<%= raw @post.title %>
+<br>
+<%=link_to "Create another blog", {:action =>'new', :controller => 'blogs'} %>
+<br>
+<%=link_to "Go to blog index", {:action =>'index', :controller => 'blogs'} %>
+<br>
+<%=link_to "Go to home page", {:controller => 'home'} %>
