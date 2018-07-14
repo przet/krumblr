@@ -1,8 +1,8 @@
 <% if user_signed_in? %>
 
-<h3> you have successfully signed in </h3>
-<%= link_to "Create Blog Post" %>
-<%= link_to "See your previous posts" %>
+<h3> You have successfully signed in </h3>
+<%= link_to "Create Blog Post", {:action => 'new', :controller => 'posts'}  %>
+<%= link_to "See your previous posts",{:action => 'index', :controller => 'posts'}  %>
 <%= link_to "Sign Out", destroy_user_session_path,
 :method => :delete %>
 
