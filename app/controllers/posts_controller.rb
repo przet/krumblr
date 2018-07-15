@@ -3,9 +3,9 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
-  #def index
-  #  @posts = Post.all
-  #end
+  def index
+    @posts = Post.all
+  end
 
   def create
     if params[:blog_id].present?
