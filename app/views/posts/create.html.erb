@@ -1,0 +1,8 @@
+<%#= render @post.title %>
+<%#= render @post.body %>
+<h4> TODO: Post body and title to go here </h4>
+<%=link_to "Create another post", {:action =>'new', :controller => 'posts'} %>
+<br>
+<%=link_to "Go to index", {:action =>'index', :controller => 'posts'} %>
+<br>
+<%=link_to "Go to home page", {:controller => 'home'} %>
