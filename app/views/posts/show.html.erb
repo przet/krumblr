@@ -1,7 +1,7 @@
-<%= raw @post.title %>
+<%= render @post.title %>
 <br>
 <br>
-<%= raw @post.body %>
+<%= render @post.body %>
 <br>
 <%=link_to "Create another post", {:action =>'new', :controller => 'posts'} %>
 <br>
