@@ -1,13 +1,6 @@
-<%= render @post.title %>
-<br>
-<br>
-<%= render @post.body %>
-<br>
-<%= @post.comments.count %><h2> Comment count </h2>
-<%= render @post.comments %>
-<br>
-<%= render 'comments/form' %>
-<br>
+<%#= render @post.title %>
+<%#= render @post.body %>
+<h4> TODO: Post body and title to go here </h4>
 <%=link_to "Create another post", {:action =>'new', :controller => 'posts'} %>
 <br>
 <%=link_to "Go to index", {:action =>'index', :controller => 'posts'} %>

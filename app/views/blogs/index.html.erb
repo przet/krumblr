@@ -1,0 +1,14 @@
+<% @blogs.each do |blog| %>
+<h2><%= blog.title %></h2>
+<h6><%= blog.created_at.strftime('%b %d, %Y') %></h6>
+<%= raw(blog.title).truncate(358) %>
+<%= link_to "Create new post", {:action =>'new', :controller => 'posts'} %>
+
+<%# Undefined method "each" error (in post index view) %>
+<%= link_to "View posts", posts_path %>
+
+<%= link_to "Delete blog", blog_path(blog),
+method: :delete, data: {confirm:"Delete blog?"} %>
+<%= link_to "Go to home page", {:controller => 'home'} %>
+<br>
+<% end %>
