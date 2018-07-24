@@ -5,7 +5,7 @@
 <%= link_to "Create new post", {:action =>'new', :controller => 'posts'} %>
 
 <%# Undefined method "each" error (in post index view) %>
-<%= link_to "View posts", posts_path %>
+<%= link_to "View posts", blog_path(blog) %>
 
 <%= link_to "Delete blog", blog_path(blog),
 method: :delete, data: {confirm:"Delete blog?"} %>
