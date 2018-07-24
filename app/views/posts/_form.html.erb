@@ -1,4 +1,4 @@
-<%= simple_form_for([@blog, @blog.post.build]) do |f| %>
+<%= simple_form_for([@blog, @blog.posts.build]) do |f| %>
 <%= f.input :title, input_html:
   {class: 'input'}, wrapper: false,
   label_html: {class: 'label'} %>
