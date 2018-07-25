@@ -1,8 +1,12 @@
-<%= raw @blog.title %>
-<br>
-<%= @blog.posts.count %> <h2> Post count </h2>
+<h1> Blog Title: <%= raw @blog.title %> </h1>
+
+<h2> Post count: <%= @blog.posts.count %> </h2>
+ 
+<h3>Posts...</h3>
 <%= render @blog.posts %>
-<br>
+<br><br>
+
+<h3>Write a new post!</h3>
 <%= render 'posts/form' %>
 <br>
 <%= link_to "Create another blog", {:action =>'new', :controller => 'blogs'} %>
