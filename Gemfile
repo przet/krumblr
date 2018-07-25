@@ -61,3 +61,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #simple_form and devise
 gem 'simple_form'
 gem 'devise'
+
+#Testing gems
+gem 'rails-controller-testing'
