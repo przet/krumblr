@@ -10,10 +10,5 @@ RSpec.describe Blog, type: :model do
       Blog.create
       expect(Blog.count).to eq(1)
   end
-
-  it "has 1 blog persisting after creating" do
-      expect(Blog.count).to eq(1)
-  end
-
   
 end
