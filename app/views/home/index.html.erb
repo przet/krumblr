@@ -1,7 +1,7 @@
 <% if user_signed_in? %>
 
 <h3> You have successfully signed in </h3>
-<%= link_to "Create a new blog", {:action => 'new', :controller => 'blogs'}  %>
+<%= link_to "Create a new blog", new_blog_path  %>
 <%= link_to "Manage your existing blogs",{:action => 'index', :controller => 'blogs'}  %>
 <%= link_to "Sign Out", destroy_user_session_path,
 :method => :delete %>
@@ -9,7 +9,7 @@
 <% else %>
 
 <h1> Welcome to Krumblr!</h1>
-<%= link_to "Sign In", new_user_session_path, :method => :get %>
-<%= link_to "Sign up", new_user_registration_path, :method => :get %>
+<%= link_to "Sign In", new_user_session_path %>
+<%= link_to "Sign up", new_user_registration_path %>
 
 <% end %>
