@@ -1,34 +1,34 @@
 class BlogsController < ApplicationController
   def new
-      @blog = Blog.new
-    end
+    @blog = Blog.new
+  end
 
-    def index
-      @blogs = Blog.all
-    end
+  def index
+    @blogs = Blog.all
+  end
 
-    def create
-      @blog = Blog.new(blog_params)
-      if @blog.save
-        redirect_to @blog
-      else
-        render :new
-      end
+  def create
+    @blog = Blog.new(blog_params)
+    if @blog.save
+      redirect_to @blog
+    else
+    render :new
     end
+  end
 
-    def show
-      @blog = Blog.find(params[:id])
-    end
+  def show
+    @blog = Blog.find(params[:id])
+  end
 
-    def destroy
-      @blog = Blog.find(params[:id])
-      @blog.destroy
-      redirect_to blogs_path
-    end
+  def destroy
+    @blog = Blog.find(params[:id])
+    @blog.destroy
+    redirect_to blogs_path
+  end
 
-    private
+  private
+  def blog_params
+  params.require(:blog).permit(:title)
+  end
 
-    def blog_params
-      params.require(:blog).permit(:title)
-    end
 end
