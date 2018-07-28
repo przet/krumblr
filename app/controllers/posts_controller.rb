@@ -42,7 +42,7 @@ class PostsController < ApplicationController
     @blog = Blog.find(params[:blog_id])
     @post = @blog.posts.find(params[:id])
     @post.destroy
-    redirect_to blog_path(@post)
+    redirect_to blog_path(@blog)
   end
 
   #private
