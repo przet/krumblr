@@ -64,3 +64,5 @@ gem 'devise'
 
 #Testing gems
 gem 'rails-controller-testing'
+gem 'database_cleaner'
+
