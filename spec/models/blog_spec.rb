@@ -2,6 +2,9 @@ require 'rails_helper'
 
 RSpec.describe Blog, type: :model do
         
+  #Delete all blogs in ActiveRecord
+  Blog.delete_all
+
   it "has 0 blogs at the start" do
       expect(Blog.count).to eq(0)
   end
@@ -12,13 +15,23 @@ RSpec.describe Blog, type: :model do
       @blog.destroy
   end
 
+  ###Test fails - I get [2], so I need to reset id's when destroying
+  #it "has blog id of 1 after creation" do
+  #    @blog = Blog.create
+  #    expect(Blog.ids). to eq([1])
+  #    @blog.destroy
+  #end
+
   it "has 0 blogs after deletion of the only one" do
-      expect(Blog.count).to eq(0)
+      @blog = Blog.create
+      expect(Blog.count).to eq(1)
+      @blog.destroy
+      expect(Blog.count). to eq(0)
   end
 
   it "has 2 blogs of differrent id's" do
       #create an array of 2 different blogs
-      @blog = [Blog.create({title:'Blog34', id:34}),
+      @blog_arr = [Blog.create({title:'Blog34', id:34}),
                Blog.create({title:'Blog56', id:56})]
       expect(Blog.count).to eq(2)
 
@@ -26,7 +39,7 @@ RSpec.describe Blog, type: :model do
       #print(Blog.ids)
       
       #could also do a for loop
-      expect(Blog.ids). to eq([@blog[0].id, @blog[1].id])
+      expect(Blog.ids). to eq([@blog_arr[0].id, @blog_arr[1].id])
   end
 
 
